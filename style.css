@@ -1,0 +1,70 @@
+body {
+  margin-left: 0;
+  text-align: center;
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+span{
+  font-size: 3.5rem;
+  margin: 0%;;
+}
+.container {
+  width: 50%;
+  border: 1px solid #2D728F;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+}
+
+.card{
+  float: left;
+  width: 20%;
+  height: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  background: #2D728F;
+}
+
+.card:hover {
+  background-color: #F28F3B;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5%;
+  outline: 0;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.flip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+.flipBack {
+  animation-name: flipBack;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+ @keyframes flipBack {
+   100% {
+     transform: rotate3d(0, 1, 0, -180deg);
+   }
+ }
